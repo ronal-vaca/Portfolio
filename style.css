@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Kufam,verdana,monaco;
+}
+
+/* INICIO HEADER */
+
+header{
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 15px;
+}
+.logo{
+    display: flex;
+    text-decoration: none;
+    height: 90px;
+    font-weight: 900;
+    align-items: center;
+    font-family: sans-serif;
+}
+.logo h2{
+    font-weight: 600;
+    font-size: 50px;
+}
+.logo img{
+    height: 80px;
+}
+nav a img{
+    color: white;
+}
+
+/* FIN HEADER */
+/* INICIO MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #06042D;
+    color: white;
+    height: 50vh;
+}
+main h1{
+    margin: 0;
+}
+.contacto{
+    border: none;
+    background-color: #0515FF;
+    color: white;
+    padding: 20px 30px;
+    margin: 20px;
+}
+
+/* FIN MAIN */
+/* Media querys */
+/* cuando llegue a los 768 pixeles, se ocultara el nombre del header y solo se mostrara el logo */
+@media (max-width:768px){
+    /* INICIO HEADER */
+    nav img{
+        height: 60px;
+    }
+    .logo h2{
+        display: none;
+        /* font-size: 45px; */
+    }
+    /* FIN HEADER */
+}
