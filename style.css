@@ -8,7 +8,7 @@ body{
 
 header{
     display: flex;
-    background-color: gray;
+    background-color: #06042D;
     justify-content: space-between;
     color: black;
     align-items: center;
@@ -21,16 +21,22 @@ header{
     font-weight: 900;
     align-items: center;
     font-family: sans-serif;
+    margin-left: 4rem;
 }
 .logo h2{
     font-weight: 600;
     font-size: 50px;
+    color: white;
+    margin-left: 30px;
 }
 .logo img{
     height: 80px;
 }
-nav a img{
-    color: white;
+nav a{
+    padding-right: 15px;
+}
+nav i {
+    font-size: 40px;
 }
 
 /* FIN HEADER */
@@ -46,16 +52,79 @@ main{
 }
 main h1{
     margin: 0;
+    font-size: 72px
+}
+main p{
+    font-size: 50px;
 }
 .contacto{
     border: none;
     background-color: #0515FF;
     color: white;
-    padding: 20px 30px;
+    padding: 1.5rem 2.5rem;
     margin: 20px;
+    font-size: 21px;
+    box-shadow: 1px 11px 28px -4px rgba(255,255,255,0.65);
+    -webkit-box-shadow: 1px 11px 28px -4px rgba(255,255,255,0.40);
+    -moz-box-shadow: 1px 11px 28px -4px rgba(255,255,255,0.65);
+    border-radius: 0px 15px 0px 15px;
+    font-weight: 600;
+}
+/* FIN MAIN */
+
+/* INICIO ABOUT ME */
+.waveTop{
+    display: flex;
+    background-color: #06042D;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
-/* FIN MAIN */
+.waveTop svg{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+.waveBottom{
+    display: flex;
+    background-color: #06042D;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.waveBottom svg{
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.aboutMe{
+    width: 100%;
+    background-color: #0099ff;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+.aboutMe .container{
+    width: 60%;
+    margin: o auto;
+    background-color: #0099ffed;
+    color: white;
+}
+.aboutMe .container h4{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 900;
+    
+}
+.aboutMe .container p{
+    padding: 0 5rem;
+    font-size: 25px;
+}
+/* FIN ABOUT ME */
+
 /* Media querys */
 /* cuando llegue a los 768 pixeles, se ocultara el nombre del header y solo se mostrara el logo */
 @media (max-width:768px){
