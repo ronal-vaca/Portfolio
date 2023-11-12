@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Kufam,verdana,monaco;
+    background-color: #0099ff; 
 }
 
 /* INICIO HEADER */
@@ -13,6 +14,7 @@ header{
     color: black;
     align-items: center;
     padding: 15px;
+    /* position: fixed; */
 }
 .logo{
     display: flex;
@@ -76,7 +78,7 @@ main p{
 .waveTop{
     display: flex;
     background-color: #06042D;
-    height: 10vh;
+    height: 30vh;
     margin: 0;
     padding: 0;
     position: relative;
@@ -84,7 +86,7 @@ main p{
 
 .waveTop svg{
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     left: 0;
 }
 .waveBottom{
@@ -97,38 +99,116 @@ main p{
 }
 .waveBottom svg{
     position: absolute;
-    top: 0px;
+    top: -1px;
     left: 0;
+    margin: 0;
+    padding: 0;
 }
 .aboutMe{
     width: 100%;
-    background-color: #0099ff;
+    /* background-color: #0099ff; */
+    /* background-color: #06042D; */
     display: flex;
     justify-content: center;
-    height: 40vh;
+    height: 450px;
 }
 .aboutMe .container{
     width: 60%;
     margin: o auto;
-    background-color: #0099ffed;
+    /* background-color: #0099ff; */
+    /* background-color: #06042D; */
     color: white;
 }
 .aboutMe .container h4{
+    position: relative;
     font-size: 70px;
     text-align: center;
     font-weight: 900;
+    margin: 0;
+    padding-top: 30px;
     
 }
 .aboutMe .container p{
     padding: 0 5rem;
-    font-size: 25px;
+    font-size: 15px;
 }
 /* FIN ABOUT ME */
 
+/* INICIO EXPERIENCIA */
+.experiencia{
+    height: 60vh;
+    margin-top: -20px;
+    padding-top: 20px;
+    background-color: #06042D;
+    color: white;
+}
+.experiencia h3{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 900;
+    margin: 50px;
+}
+.informacion{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.informacion .job{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.informacion p{
+    font-size: 25px;
+}
+/* IZQUIERDA */
+.info-izquierda .container{
+    height: 15rem;
+    background: rgb(6,4,45);
+    background: linear-gradient(90deg, rgba(6,4,45,1) 0%, rgba(4,114,253,1) 95%);
+    width: 35%;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.info-izquierda .container .job-izquierdo{
+    margin-left: 60%;
+}
+.info-izquierda .detalle{
+    width: 75%;
+    border: 1px solid #000;
+    margin-right: 20%;
+    margin-left: 40px;
+}
+.info-derecha .container{
+    height: 15rem;
+    background: rgb(4,114,253);
+    background: linear-gradient(90deg, rgba(4,114,253,1) 0%, rgba(6,4,45,1) 95%);
+    width: 35%;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+/* DERECHA */
+.info-derecha .container .job-derecho{
+    margin-left: 17%;
+}
+.info-derecha .detalle{
+    width: 75%;
+    border: 1px solid #000;
+    margin-left: 20%;
+    margin-right: 40px;
+}
+
+/* FIN EXPERIENCIA */
+
+
+
 /* Media querys */
 /* cuando llegue a los 768 pixeles, se ocultara el nombre del header y solo se mostrara el logo */
-@media (max-width:768px){
+@media (max-width:780px){
     /* INICIO HEADER */
+    .logo{
+        margin-left: 0;
+    }
     nav img{
         height: 60px;
     }
@@ -136,5 +216,38 @@ main p{
         display: none;
         /* font-size: 45px; */
     }
+    
     /* FIN HEADER */
+    /* INICIO MAIN */
+    main P{
+        font-size: 27px;
+    }
+    main h1{
+        font-size: 42px
+    }
+    .aboutMe{
+        height: 20vh;
+    }   
+    .aboutMe .container h4{
+        /* position: relative; */
+        font-size: 40px;
+        /* text-align: center; */
+        font-weight: 600;
+        /* margin: 0; */
+        
+    }
+    .aboutMe .container p{
+        /* padding: 0 5rem; */
+        font-size: 15px;
+    }
+    /* FIN MAIN */
+    /* INICIO EXPERIENCIA */
+    .experiencia h3{
+        font-size: 40px;
+        /* text-align: center; */
+        font-weight: 600;
+    }
+
+
+    /* FIN EXPERIENCIA */
 }
