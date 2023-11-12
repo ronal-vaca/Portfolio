@@ -99,7 +99,7 @@ main p{
 }
 .waveBottom svg{
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 0;
     margin: 0;
     padding: 0;
@@ -129,8 +129,8 @@ main p{
     
 }
 .aboutMe .container p{
-    padding: 0 5rem;
-    font-size: 15px;
+    padding: 0.5rem;
+    font-size: 30px;
 }
 /* FIN ABOUT ME */
 
@@ -174,10 +174,21 @@ main p{
     margin-left: 60%;
 }
 .info-izquierda .detalle{
-    width: 75%;
+    width: 65%;
     border: 1px solid #000;
     margin-right: 20%;
     margin-left: 40px;
+}
+
+/* DERECHA */
+.info-derecha .container .job-derecho{
+    margin-left: 17%;
+}
+.info-derecha .detalle{
+    width: 65%;
+    border: 1px solid #000;
+    margin-left: 20%;
+    margin-right: 40px;
 }
 .info-derecha .container{
     height: 15rem;
@@ -187,17 +198,6 @@ main p{
     border: 1px solid #000;
     border-radius: 15px;
 }
-/* DERECHA */
-.info-derecha .container .job-derecho{
-    margin-left: 17%;
-}
-.info-derecha .detalle{
-    width: 75%;
-    border: 1px solid #000;
-    margin-left: 20%;
-    margin-right: 40px;
-}
-
 /* FIN EXPERIENCIA */
 
 
@@ -214,40 +214,78 @@ main p{
     }
     .logo h2{
         display: none;
-        /* font-size: 45px; */
     }
     
     /* FIN HEADER */
+
     /* INICIO MAIN */
     main P{
         font-size: 27px;
     }
     main h1{
-        font-size: 42px
+        font-size: 42px;
+        text-align:center;
     }
     .aboutMe{
         height: 20vh;
+        width: 100%;
     }   
     .aboutMe .container h4{
-        /* position: relative; */
         font-size: 40px;
-        /* text-align: center; */
         font-weight: 600;
-        /* margin: 0; */
+        width: 100%;
         
     }
     .aboutMe .container p{
-        /* padding: 0 5rem; */
         font-size: 15px;
+        display: none;
     }
     /* FIN MAIN */
+
     /* INICIO EXPERIENCIA */
+    .experiencia{
+        height: 70vh;
+    }
+    .experiencia .informacion{
+        margin-bottom: 20px;
+    }
     .experiencia h3{
         font-size: 40px;
         /* text-align: center; */
         font-weight: 600;
     }
-
-
+    .info-izquierda .container{
+        height: 10rem;
+        width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+    .info-izquierda p {
+        width: 65%;
+        font-size: 15px;
+    }
+    .informacion .job{
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .info-derecha .container{
+        height: 10rem;
+        width: 250px;
+        margin-left: 80px;
+        padding: 0;
+        justify-content: flex-end;
+    }
+    .info-derecha .container .job-derecho{
+        align-self: flex-end;
+    }
+    .info-derecha p {
+        /* width: 65%; */
+        font-size: 15px;
+        margin: 0;
+    }
+    .informacion .detalle{
+        display: none;
+    }
     /* FIN EXPERIENCIA */
 }
